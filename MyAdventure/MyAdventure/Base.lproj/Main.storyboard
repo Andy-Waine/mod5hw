@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CfC-wz-ifh">
+                                <rect key="frame" x="4" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fo8-Si-5Rk">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="379.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are leading a train of covered wagons westward to Wyoming." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-VL-ysb">
+                                                <rect key="frame" x="25.333333333333343" y="0.0" width="342.66666666666663" height="379.66666666666669"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" red="0.29896907220000002" green="0.1672312635" blue="0.1037901482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mnI-rk-OGQ">
+                                        <rect key="frame" x="0.0" y="379.66666666666674" width="393" height="379.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3z-Zt-R5f">
+                                                <rect key="frame" x="0.0" y="149.66666666666669" width="195.66666666666666" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="uPx-Pp-Ix0"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.2989690721649485" green="0.16723126345183981" blue="0.10379014822218009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Choice 1" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41T-Oe-ybS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSd-nI-6pe">
+                                                <rect key="frame" x="197.66666666666663" y="149.66666666666669" width="195.33333333333337" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="gA8-Kc-V1P"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.29896907220000002" green="0.1672312635" blue="0.1037901482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Choice 2">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGR-a7-1Bw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.97999999999999998" height="1"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mnI-rk-OGQ" secondAttribute="trailing" constant="4" id="tl8-ut-6wT"/>
+                                    <constraint firstItem="mnI-rk-OGQ" firstAttribute="leading" secondItem="CfC-wz-ifh" secondAttribute="leading" constant="4" id="vkw-Z6-S73"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96391752577319589" green="0.85212621813494205" blue="0.75383293682262753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CfC-wz-ifh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9O9-06-TAg"/>
+                            <constraint firstItem="CfC-wz-ifh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9kj-1H-fAY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CfC-wz-ifh" secondAttribute="bottom" id="L4Q-8X-YBu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CfC-wz-ifh" secondAttribute="trailing" id="c4C-aF-tHU"/>
+                            <constraint firstItem="CfC-wz-ifh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="4" id="lKh-yU-pm8"/>
+                            <constraint firstItem="CfC-wz-ifh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="pF9-1Z-Arr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="D3z-Zt-R5f" id="R4y-K7-PYt"/>
+                        <outlet property="choice2Button" destination="dSd-nI-6pe" id="S9q-oC-TxS"/>
+                        <outlet property="storyLabel" destination="l8x-VL-ysb" id="2oz-Ls-27t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+</document>
